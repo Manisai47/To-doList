@@ -79,17 +79,6 @@ button {
   to { opacity: 1; }
 }
 
-/* LOGIN */
-.login-screen {
-  position: fixed;
-  inset: 0;
-  background: #020617;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 /* AI ADVISOR */
 .ai-advisor {
   position: fixed;
