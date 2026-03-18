@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GenZ Productivity Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+</head>
+
+<body>
+
+<div id="tsparticles"></div>
+
+<!-- LOGIN -->
+<div class="login-screen" id="loginScreen">
+  <h2>Welcome ⚡</h2>
+  <input id="username" placeholder="Your name">
+  <button onclick="login()">Enter</button>
+</div>
+
+<div class="container">
+
+  <!-- CLOCK + DATE -->
+  <div class="clock" id="clock"></div>
+  <div class="date" id="date"></div>
+
+  <h1>⚡ GenZ Productivity Pro</h1>
+
+  <!-- ADD TASK -->
+  <div class="card">
+    <input id="taskInput" placeholder="Task..." />
+
+    <select id="priority">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+
+    <input type="date" id="taskDate">
+    <input type="time" id="reminderTime">
+
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <!-- TASK LIST -->
+  <div class="card">
+    <h2>📌 Tasks</h2>
+    <div id="taskList"></div>
+  </div>
+
+  <!-- STREAK -->
+  <div class="card">
+    <h2>🔥 Streak</h2>
+    <p id="streakText"></p>
+  </div>
+
+  <!-- HEATMAP -->
+  <div class="card">
+    <h2>📅 Yearly Activity</h2>
+    <div id="heatmap"></div>
+  </div>
+
+</div>
+
+<!-- AI ADVISOR -->
+<div class="ai-advisor" id="aiAdvisor">
+  <h3>🤖 AI Advisor</h3>
+  <p id="aiText">Loading...</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

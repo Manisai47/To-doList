@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #020617;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(30,41,59,0.6);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.clock, .date {
+  text-align: right;
+  color: #38bdf8;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  border: none;
+}
+
+button {
+  background: linear-gradient(135deg,#8b5cf6,#06b6d4);
+  color: white;
+  cursor: pointer;
+}
+
+.task {
+  background: #1e293b;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* HEATMAP */
+#heatmap {
+  display: grid;
+  grid-template-columns: repeat(53, 1fr);
+  gap: 3px;
+}
+
+.day {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 3px;
+  animation: fadeIn 0.5s ease;
+}
+
+.level-0 { background: #1e293b; }
+.level-1 { background: #4ade80; }
+.level-2 { background: #22c55e; }
+.level-3 { background: #16a34a; }
+.level-4 { background: #15803d; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* LOGIN */
+.login-screen {
+  position: fixed;
+  inset: 0;
+  background: #020617;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* AI ADVISOR */
+.ai-advisor {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 260px;
+  background: rgba(30,41,59,0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 20px rgba(139,92,246,0.4);
+}
+
+.ai-advisor h3 {
+  margin: 0 0 5px 0;
+  color: #38bdf8;
+}
