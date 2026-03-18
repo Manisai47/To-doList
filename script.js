@@ -2,12 +2,6 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let activity = JSON.parse(localStorage.getItem("activity")) || {};
 let streak = JSON.parse(localStorage.getItem("streak")) || {count:0,lastDate:null};
 
-// LOGIN
-function login(){
-  localStorage.setItem("user", username.value);
-  loginScreen.style.display="none";
-}
-if(localStorage.getItem("user")) loginScreen.style.display="none";
 
 // IST DATE
 function getISTDate(){
